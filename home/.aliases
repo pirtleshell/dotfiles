@@ -1,0 +1,30 @@
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# i suck at typing
+alias got='git'
+alias gti='git'
+alias gut='git'
+
+# colors!
+if [[ -x "/usr/bin/dircolors" ]]; then
+    test -r "$HOME/.dircolors" && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
+
+    alias ls='ls --color=auto'
+    alias grep="grep --color=auto"
+    alias fgrep="fgrep --color=auto"
+    alias egrep="egrep --color=auto"
+fi
+
+alias weather='curl wttr.in/~portland'
+
+# less which
+function lw() { less `which $*` ; }
+
+# find a file with a pattern in name
+function ff() { find . -type f -iname '*'$*'*' -ls ; }
+
+# find a directory with a pattern in name
+function fd() { find . -type d -iname '*'$*'*' -ls ; }
