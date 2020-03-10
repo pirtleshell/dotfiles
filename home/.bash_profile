@@ -41,3 +41,11 @@ alias egrep='egrep --color=auto'
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
+
+
+#################################################
+# tab completion
+#################################################
+if [ -f ~/.dotfiles/etc/git-completion.sh ]; then
+    . ~/.dotfiles/etc/git-completion.sh
+fi

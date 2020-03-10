@@ -2,6 +2,8 @@
 
 DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# symlink entire dotfiles dir
+ln -s $DOTDIR ~/.dotfiles
 
 # bash setup
 ln -s ${DOTDIR}/home/.bash_profile ~/.bash_profile
