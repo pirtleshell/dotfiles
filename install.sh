@@ -12,3 +12,5 @@ ln -s ${DOTDIR}/home/.aliases ~/.aliases
 
 # git
 ln -s ${DOTDIR}/home/.gitconfig ~/.gitconfig
+
+source ~/.bash_profile
