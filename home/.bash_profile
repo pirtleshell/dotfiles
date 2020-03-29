@@ -50,4 +50,10 @@ if [ -f ~/.dotfiles/etc/git-completion.sh ]; then
     . ~/.dotfiles/etc/git-completion.sh
 fi
 
+#################################################
+# path magic
+#################################################
+# yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
