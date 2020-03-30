@@ -18,6 +18,7 @@ FILES='
 .bash_prompt
 .gitconfig
 .zprofile
+.zsh_prompt
 '
 for FILE in $FILES; do remove_link $FILE; done
 
