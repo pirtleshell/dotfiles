@@ -4,8 +4,9 @@
 echo running cleanup script
 
 function remove_link() {
-  if [ -L $1 ]; then
-    unlink $1
+  local _f=$HOME/$1
+  if [ -L $_f ]; then
+    unlink $_f
     echo '  unlinked' $1
   fi
 }
