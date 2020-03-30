@@ -3,11 +3,11 @@
 DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # symlink entire dotfiles dir
-if [ ! -L ~/.dotfiles ]; then
+if [ ! -e ~/.dotfiles ]; then
   echo linking .dotfiles directory
   ln -s $DOTDIR ~/.dotfiles
 else
-  echo '~/.dotfiles link exists'
+  echo '~/.dotfiles exists'
 fi
 
 ${DOTDIR}/cleanup.sh
