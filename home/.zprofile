@@ -12,6 +12,7 @@ fi
 #################################################
 # zsh history
 #################################################
+export HISTFILE=~/.history
 export HISTSIZE=50000
 export HISTFILESIZE=100000
 export SAVEHIST=$HISTSIZE
