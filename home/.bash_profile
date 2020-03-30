@@ -2,13 +2,17 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+if [ -f ~/.dotfiles/home/profile.sh ]; then
+    . ~/.dotfiles/home/profile.sh
+fi
+
 #################################################
 # bash history
 #################################################
 shopt -s histappend      # append, don't override
 HISTCONTROL=ignoreboth   # ignore duplicate commands and those beginning with a space
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=50000
+HISTFILESIZE=100000
 
 
 # check the window size after each command and, if necessary,
@@ -25,35 +29,8 @@ fi
 
 
 #################################################
-# colors 'cause we fancy
-#################################################
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-
-#################################################
-# aliases live in .aliases
-#################################################
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
-
-
-#################################################
 # tab completion
 #################################################
 if [ -f ~/.dotfiles/etc/git-completion.sh ]; then
     . ~/.dotfiles/etc/git-completion.sh
 fi
-
-#################################################
-# path magic
-#################################################
-# yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-# rust
-export PATH="$HOME/.cargo/bin:$PATH"

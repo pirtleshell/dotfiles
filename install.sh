@@ -1,16 +1,38 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # symlink entire dotfiles dir
-ln -s $DOTDIR ~/.dotfiles
+if [ ! -L ~/.dotfiles ]; then
+  echo linking .dotfiles directory
+  ln -s $DOTDIR ~/.dotfiles
+else
+  echo '~/.dotfiles link exists'
+fi
 
-# bash setup
-ln -s ${DOTDIR}/home/.bash_profile ~/.bash_profile
-ln -s ${DOTDIR}/home/.bash_prompt ~/.bash_prompt
-ln -s ${DOTDIR}/home/.aliases ~/.aliases
+${DOTDIR}/cleanup.sh
+
+
+function home_link() {
+  echo '  linking' $1
+  ln -s ${DOTDIR}/home/$1 ~/$1
+}
+
+# universal aliases setup
+home_link .aliases
+
+case "$SHELL" in
+  *zsh)
+    # zsh-specific files
+    echo zsh in use, linking relevant files
+    home_link .zprofile
+    ;;
+  *bash)
+    # bash-specific files
+    echo bash in use, linking relevant files
+    home_link .bash_profile
+    home_link .bash_prompt
+esac
 
 # git
-ln -s ${DOTDIR}/home/.gitconfig ~/.gitconfig
-
-source ~/.bash_profile
+home_link .gitconfig
