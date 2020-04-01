@@ -25,7 +25,7 @@ case "$SHELL" in
   *zsh)
     # zsh-specific files
     echo zsh in use, linking relevant files
-    home_link .zprofile
+    home_link .zshrc
     home_link .zsh_prompt
     ;;
   *bash)
