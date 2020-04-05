@@ -30,7 +30,6 @@ setopt share_history          # share command history data
 # prompt
 #################################################
 if [ -f ~/.zsh_prompt ]; then
-    echo 'prompt exists!'
     . ~/.zsh_prompt
 fi
 
