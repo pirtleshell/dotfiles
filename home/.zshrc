@@ -37,6 +37,9 @@ fi
 #################################################
 # tab completion
 #################################################
+setopt noautomenu
+setopt bashautolist
+
 if [ -f ~/.dotfiles/etc/git-completion.zsh ]; then
     . ~/.dotfiles/etc/git-completion.sh > /dev/null 2>&1
     zstyle ':completion:*:*:git:*' script ~/.dotfiles/etc/git-completion.zsh
