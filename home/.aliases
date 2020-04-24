@@ -32,4 +32,7 @@ function fd() { find . -type d -iname '*'$*'*' -ls ; }
 
 if [[ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ]]; then
     alias code='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+
+    # RIP
+    alias atom=code
 fi
