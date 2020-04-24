@@ -8,6 +8,8 @@ function remove_link() {
   if [ -L $_f ]; then
     unlink $_f
     echo '  unlinked' $1
+  elif [ -f $_f ]; then
+    echo '  *** non-symlinked file exists:' $1 '***'
   fi
 }
 
