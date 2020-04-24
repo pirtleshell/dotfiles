@@ -37,3 +37,9 @@ esac
 
 # git
 home_link .gitconfig
+
+# vscode settings
+if [ -d ~/Library/Application\ Support/Code/User/ ]; then
+  echo '  linking vscode settings.json'
+  ln -s $DOTDIR/editor/vscode.json ~/Library/Application\ Support/Code/User/settings.json
+fi

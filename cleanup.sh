@@ -3,7 +3,7 @@
 
 echo running cleanup script
 
-function remove_link() {
+function remove_home_link() {
   local _f=$HOME/$1
   if [ -L $_f ]; then
     unlink $_f
@@ -13,7 +13,7 @@ function remove_link() {
   fi
 }
 
-
+# home files
 FILES='
 .aliases
 .bash_profile
@@ -22,6 +22,20 @@ FILES='
 .zshrc
 .zsh_prompt
 '
-for FILE in $FILES; do remove_link $FILE; done
+for FILE in $FILES; do remove_home_link $FILE; done
+
+
+# vscode settings
+if [ -d ~/Library/Application\ Support/Code/User/ ]; then
+
+  if [ -f ~/Library/Application\ Support/Code/User/settings.json ]; then
+    echo '  vscode settings is unlniked file! not overriding.'
+  elif [ -L ~/Library/Application\ Support/Code/User/settings.json ]; then
+    echo '  unlinked vscode settings.json'
+  fi
+
+else
+  echo '  vscode not found. settings not unlinked.'
+fi
 
 echo cleanup completed

@@ -1,0 +1,13 @@
+{
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    100
+  ],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.eol": "\n"
+}
