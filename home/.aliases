@@ -29,3 +29,7 @@ function ff() { find . -type f -iname '*'$*'*' -ls ; }
 
 # find a directory with a pattern in name
 function fd() { find . -type d -iname '*'$*'*' -ls ; }
+
+if [[ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ]]; then
+    alias code='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+fi
