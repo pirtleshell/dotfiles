@@ -44,3 +44,10 @@ if [ -f ~/.dotfiles/etc/git-completion.zsh ]; then
     . ~/.dotfiles/etc/git-completion.sh > /dev/null 2>&1
     zstyle ':completion:*:*:git:*' script ~/.dotfiles/etc/git-completion.zsh
 fi
+
+
+#################################################
+# some keybindings
+#################################################
+# fn-delete for forward delete
+bindkey "^[[3~" delete-char
