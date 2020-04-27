@@ -6,6 +6,7 @@
   "editor.rulers": [
     100
   ],
+  "editor.wordWrap": "on",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
