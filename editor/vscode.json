@@ -9,5 +9,7 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "swaggerViewer.defaultPort": 10239,
+  "swaggerViewer.previewInBrowser": true
 }
