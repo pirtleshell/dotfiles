@@ -26,12 +26,14 @@ for FILE in $FILES; do remove_home_link $FILE; done
 
 
 # vscode settings
-if [ -d ~/Library/Application\ Support/Code/User/ ]; then
+CODE_DIR=~/Library/Application\ Support/Code/User/
+if [ -d "$CODE_DIR" ]; then
 
-  if [ -f ~/Library/Application\ Support/Code/User/settings.json ]; then
-    echo '  vscode settings is unlniked file! not overriding.'
-  elif [ -L ~/Library/Application\ Support/Code/User/settings.json ]; then
+  if [ -L "$CODE_DIR"/settings.json ]; then
     echo '  unlinked vscode settings.json'
+    unlink "$CODE_DIR"/settings.json
+  elif [ -f "$CODE_DIR"/settings.json ]; then
+    echo '  vscode settings is unlinked file! not overriding.'
   fi
 
 else
