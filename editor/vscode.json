@@ -12,5 +12,7 @@
   "files.trimFinalNewlines": true,
   "files.eol": "\n",
   "swaggerViewer.defaultPort": 10239,
-  "swaggerViewer.previewInBrowser": true
+  "swaggerViewer.previewInBrowser": true,
+  "azureFunctions.showProjectWarning": false,
+  "explorer.confirmDelete": false
 }
