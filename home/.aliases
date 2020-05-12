@@ -35,4 +35,7 @@ if [[ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ]]; then
 
     # RIP
     alias atom=code
+
+    # edit dotfiles in code
+    alias edf='code ~/.dotfiles'
 fi
