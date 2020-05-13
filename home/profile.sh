@@ -32,7 +32,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #################################################
 # misc
 #################################################
+
+### Docker ###
 # fast & pretty docker
 # https://www.docker.com/blog/solving-docker-compose-performance-on-macos-catalina/
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
+
+# Clean up all your crufty containers
+function docker-clean {
+    yes | docker system prune
+    yes | docker system prune --volumes
+}
