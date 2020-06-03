@@ -14,5 +14,13 @@
   "swaggerViewer.defaultPort": 10239,
   "swaggerViewer.previewInBrowser": true,
   "azureFunctions.showProjectWarning": false,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "prettier.singleQuote": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
