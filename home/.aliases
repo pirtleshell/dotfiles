@@ -39,3 +39,6 @@ if [[ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ]]; then
     # edit dotfiles in code
     alias edf='code ~/.dotfiles'
 fi
+
+# misc applications
+alias dc='docker-compose'
