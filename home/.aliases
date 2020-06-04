@@ -7,7 +7,7 @@ alias l='ls -CF'
 # i suck at typing
 alias got='git'
 alias gti='git'
-alias gut='git'
+alias gut='echo "hungry?" && git'
 
 # colors!
 if [[ -x "/usr/bin/dircolors" ]]; then
