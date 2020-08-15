@@ -27,6 +27,8 @@ fi
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
+# go
+export PATH="$HOME/go/bin:$PATH:/usr/local/go/bin"
 
 
 #################################################
