@@ -4,21 +4,20 @@
 # show hidden files
 defaults write com.apple.finder AppleShowAllFiles TRUE
 
-
 # expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
 
 # enable touch-to-click for the user and login
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-
 # holding a key repeats the key!
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-
 # don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
+
+# show date next to time in topbar
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d H.mm"
