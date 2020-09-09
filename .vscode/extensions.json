@@ -1,0 +1,27 @@
+{
+  "recommendations": [
+    "mrmlnc.vscode-apache",
+    "aaron-bond.better-comments",
+    "bungcip.better-toml",
+    "ms-vscode.cpptools",
+    "streetsidesoftware.code-spell-checker",
+    "ms-azuretools.vscode-docker",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "golang.Go",
+    "Prisma.vscode-graphql",
+    "pancho111203.vscode-ipython",
+    "sumneko.lua",
+    "shd101wyy.markdown-preview-enhanced",
+    "eg2.vscode-npm-script",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "2gua.rainbow-brackets",
+    "mechatroner.rainbow-csv",
+    "rust-lang.rust",
+    "Arjun.swagger-viewer",
+    "tomoki1207.pdf",
+    "redhat.vscode-yaml"
+ ]
+}
