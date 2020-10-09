@@ -54,5 +54,7 @@
   ],
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+  },
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0
 }
