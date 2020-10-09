@@ -50,7 +50,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.userWords": [
-    "Pirtle"
+    "Pirtle",
+    "interactor",
+    "interactors",
+    "meterings"
   ],
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
