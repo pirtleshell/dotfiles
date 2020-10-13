@@ -30,14 +30,15 @@ function ff() { find . -type f -iname '*'$*'*' -ls ; }
 # find a directory with a pattern in name
 function fd() { find . -type d -iname '*'$*'*' -ls ; }
 
-if [[ -f /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron ]]; then
-    alias code='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
-
+if command -v code &> /dev/null
+then
     # RIP
     alias atom=code
 
     # edit dotfiles in code
     alias edf='code ~/.dotfiles'
+else
+    echo 'VS Code is not in path'
 fi
 
 # misc applications
