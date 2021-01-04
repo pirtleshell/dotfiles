@@ -11,3 +11,10 @@
 * [Slack](https://slack.com/downloads/)
 * [Spotify](https://www.spotify.com/us/download/)
 * [Joplin](https://github.com/laurent22/joplin/releases)
+
+## Python modules
+```sh
+pip insall numpy pandas
+pip install matplotlib seaborn
+# iPython
+pip install notebook

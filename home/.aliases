@@ -21,6 +21,32 @@ fi
 
 alias weather='curl wttr.in/~portland'
 
+# down a level & possibly run a command
+function ..() {
+    cd ..
+    if [ ! -z "${1}" ]; then ${*}; fi
+}
+
+# back to last place & possibly run a command
+function -() {
+    cd -
+    if [ ! -z "${1}" ]; then ${*}; fi
+}
+
+# go to a place, run a thing, come back
+function cdx() {
+    cd ${1}
+    ${A[@]:1}
+    cd -
+}
+
+# down a level, run a thing, come back
+function .-() {
+    cd ..
+    ${*}
+    cd -
+}
+
 # less which
 function lw() { less `which $*` ; }
 
