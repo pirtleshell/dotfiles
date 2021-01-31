@@ -23,6 +23,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# quick jump around with z.sh, but it's called j! for JUMP!
+# see etc/z.sh
+export _Z_CMD='j'
+source_if_exists "$HOME/.dotfiles/etc/z.sh"
 
 #################################################
 # path magic
