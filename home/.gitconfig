@@ -16,6 +16,7 @@
 	diff = diff -w
 	show = show -w
 
+	amend = commit -a --amend
 	sync = !git pull --rebase && git remote prune origin && git branch --merged | grep -v master | xargs git branch -d
 	rekt = push origin master -f
 
