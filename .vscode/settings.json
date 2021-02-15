@@ -14,10 +14,9 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.eol": "\n",
-  "terminal.integrated.env.osx": {
-    "VISUAL": "/usr/local/bin/code --wait"
-  },
+  "terminal.integrated.env.osx": { "VISUAL": "/usr/local/bin/code --wait" },
   "window.zoomLevel": 0,
+  "workbench.editor.wrapTabs": true,
   "prettier.singleQuote": true,
   "codemetrics.nodeconfiguration.CaseClause": 0,
   "codemetrics.nodeconfiguration.ReturnStatement": 0.25,

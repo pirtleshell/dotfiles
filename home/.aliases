@@ -58,6 +58,7 @@ function fd() { find . -type d -iname '*'$*'*' -ls ; }
 
 if command -v code &> /dev/null
 then
+    alias code.='code .'
     # RIP
     alias atom=code
 
