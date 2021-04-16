@@ -59,3 +59,8 @@ function docker-clean {
 export NVM_DIR="$HOME/.nvm"
 source_if_exists "$NVM_DIR/nvm.sh"
 source_if_exists "$NVM_DIR/bash_completion"
+
+### Nodenv setup ###
+if hash nodenv 2>/dev/null; then
+    eval "$(nodenv init -)"
+fi
