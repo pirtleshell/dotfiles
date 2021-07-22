@@ -49,3 +49,7 @@
 	added = green
 	changed = red
 	untracked = cyan
+
+# allow local configuration overrides (must be last)
+[include]
+	path = .gitconfig.local
