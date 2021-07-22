@@ -49,6 +49,20 @@ export PATH="$HOME/go/bin:$PATH:/usr/local/go/bin"
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
 
+### GPG ###
+# the following allows you to use GPG for SSH
+gpg_restart() {
+    killall gpg-agent
+    gpg-agent --daemon --enable-ssh-support > /dev/null 2>&1
+}
+if hash gpg 2>/dev/null; then
+    GPG_TTY=$TTY
+    SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
+    SSH_AGENT_PID=""
+    export GPG_TTY SSH_AUTH_SOCK SSH_AGENT_PID
+    gpg_restart
+fi
+
 # Clean up all your crufty containers
 function docker-clean {
     yes | docker system prune
