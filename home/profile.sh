@@ -78,3 +78,8 @@ source_if_exists "$NVM_DIR/bash_completion"
 if hash nodenv 2>/dev/null; then
     eval "$(nodenv init -)"
 fi
+
+####
+# Support local machine overrides for anything!
+####
+source_if_exists ~/.localrc
