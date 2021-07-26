@@ -70,3 +70,9 @@ fi
 
 # misc applications
 alias dc='docker-compose'
+
+# python venv
+# assumes virtual env has been setup at ~/.venv
+# to do that:
+# python3 -m venv ~/.venv
+alias venv='source ~/.venv/bin/activate'
