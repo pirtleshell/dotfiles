@@ -31,6 +31,13 @@ fi
 #################################################
 # tab completion
 #################################################
+
+# git
 if [ -f ~/.dotfiles/etc/git-completion.sh ]; then
     . ~/.dotfiles/etc/git-completion.sh
+fi
+
+# kubernetes
+if hash kubectl 2>/dev/null; then
+    source <(kubectl completion bash)
 fi

@@ -40,9 +40,15 @@ fi
 setopt noautomenu
 setopt bashautolist
 
+# git completion
 if [ -f ~/.dotfiles/etc/git-completion.zsh ]; then
     . ~/.dotfiles/etc/git-completion.sh > /dev/null 2>&1
     zstyle ':completion:*:*:git:*' script ~/.dotfiles/etc/git-completion.zsh
+fi
+
+# kubernetes
+if hash kubectl 2>/dev/null; then
+    source <(kubectl completion zsh)
 fi
 
 
