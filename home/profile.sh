@@ -62,6 +62,9 @@ if hash gpg 2>/dev/null; then
     SSH_AGENT_PID=""
     export GPG_TTY SSH_AUTH_SOCK SSH_AGENT_PID
     gpg_restart
+
+    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+    gpgconf --launch gpg-agent
 fi
 
 # Clean up all your crufty containers
