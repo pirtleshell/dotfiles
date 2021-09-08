@@ -70,6 +70,7 @@ fi
 
 # misc applications
 alias dc='docker-compose'
+alias k=kubectl
 
 # python venv
 # assumes virtual env has been setup at ~/.venv
