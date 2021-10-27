@@ -73,10 +73,9 @@ function docker-clean {
     yes | docker system prune --volumes
 }
 
-### Node Version Manager ###
-export NVM_DIR="$HOME/.nvm"
-source_if_exists "$NVM_DIR/nvm.sh"
-source_if_exists "$NVM_DIR/bash_completion"
+### asdf Tool Version Manager ###
+# http://asdf-vm.com/guide/getting-started.html
+source_if_exists /usr/local/opt/asdf/libexec/asdf.sh
 
 ### Nodenv setup ###
 if hash nodenv 2>/dev/null; then
