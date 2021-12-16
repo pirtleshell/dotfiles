@@ -17,7 +17,7 @@
 	show = show -w
 
 	amend = commit --amend
-	sync = !git pull --rebase && git remote prune origin && git branch --merged | grep -vE 'main|master|trunk' | xargs git branch -d
+	sync = !git pull --rebase && git remote prune origin && git branch --merged | grep -vE 'main|master|trunk|feature/*' | xargs git branch -d
 	rekt = push origin master -f
 
 	# logging shortcuts
