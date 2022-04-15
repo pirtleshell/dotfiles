@@ -3,26 +3,23 @@
   "telemetry.enableTelemetry": false,
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
-  "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [100],
-  "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.eol": "\n",
-  "terminal.integrated.env.osx": { "VISUAL": "/usr/local/bin/code --wait" },
-  "window.zoomLevel": 0,
+  "terminal.integrated.env.osx": {
+    "VISUAL": "/usr/local/bin/code --wait"
+  },
   "workbench.editor.wrapTabs": true,
-  "prettier.singleQuote": true,
   "codemetrics.nodeconfiguration.CaseClause": 0,
   "codemetrics.nodeconfiguration.ReturnStatement": 0.25,
   "codemetrics.nodeconfiguration.DefaultClause": 0,
   "gitlens.blame.ignoreWhitespace": true,
-  "swaggerViewer.defaultPort": 10239,
   "swaggerViewer.previewInBrowser": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -59,13 +56,47 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.userWords": [
-    "Pirtle",
+    "authorizable",
     "baseload",
+    "healthcheck",
+    "hotspot",
     "interactor",
     "interactors",
-    "kbtu",
     "kpis",
-    "meterings",
-    "postgres"
-  ]
+    "OIDC",
+    "Pirtle",
+    "postgres",
+    "structs",
+    "upsert",
+    "upserting",
+    "webauthn"
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "redhat.telemetry.enabled": false,
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "swaggerViewer.defaultPort": 10239,
+  "docker.showStartPage": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "editor.formatOnSave": true,
+  "githubPullRequests.terminalLinksHandler": "github",
+  "window.zoomLevel": 1,
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }
