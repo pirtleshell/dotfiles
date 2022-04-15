@@ -9,6 +9,6 @@ brew install git-lfs
 brew install gnupg
 brew install tree
 brew install wget
-brew install yarn
+brew install ngrok/ngrok/ngrok
 
 brew cleanup

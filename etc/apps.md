@@ -1,12 +1,13 @@
 # Some things you probs wanna install once
 
 ## Dev tools
-* [brew](https://brew.sh/)
+* [brew](https://brew.sh/). then see [brew.sh](./brew.sh)
 * [VSCode](https://code.visualstudio.com/)
   * [FiraCode](https://github.com/tonsky/FiraCode#download--install)
 * [Docker](https://www.docker.com/get-started)
 * [Postman](https://www.postman.com/downloads/)
-* [asdf](http://asdf-vm.com/guide/getting-started.html)
+* [TablePlus](https://www.tableplus.io/download)
+* [asdf](http://asdf-vm.com/guide/getting-started.html) (installed with brew)
 
 asdf plugins:
 [Official](https://github.com/asdf-vm/asdf-plugins) & Community
@@ -28,9 +29,14 @@ asdf plugin-add waypoint https://github.com/asdf-community/asdf-hashicorp.git
 ```
 
 ## Misc
+* [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
+* [Chrome](https://www.google.com/chrome/)
+* [1Pass](https://1password.com/downloads/mac/)
+* [LICEcap](https://www.cockos.com/licecap/)
+* [Joplin](https://github.com/laurent22/joplin/releases)
 * [Slack](https://slack.com/downloads/)
 * [Spotify](https://www.spotify.com/us/download/)
-* [Joplin](https://github.com/laurent22/joplin/releases)
+* [Zoom](https://zoom.us/download#client_4meeting)
 
 ## Python modules
 ```sh
