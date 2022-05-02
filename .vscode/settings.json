@@ -97,6 +97,5 @@
   "go.toolsManagement.autoUpdate": true,
   "editor.formatOnSave": true,
   "githubPullRequests.terminalLinksHandler": "github",
-  "window.zoomLevel": 1,
   "terminal.integrated.enableMultiLinePasteWarning": false
 }
