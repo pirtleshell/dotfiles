@@ -38,6 +38,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # go
 export GOPATH="$HOME/go"
 export PATH="$GOPATH:$PATH:/usr/local/go/bin"
+export GO111MODULE=on
 # local bin
 export PATH="$HOME/.bin:$PATH"
 
