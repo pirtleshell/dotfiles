@@ -11,7 +11,7 @@ alias gut='echo "hungry?" && git'
 
 # colors!
 if [[ -x "/usr/bin/dircolors" ]]; then
-    test -r "$HOME/.dircolors" && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
+    test -r "$HOME/.dircolors" && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
     alias ls='ls --color=auto'
     alias grep="grep --color=auto"
@@ -24,31 +24,31 @@ alias weather='curl wttr.in/~portland'
 # down a level & possibly run a command
 function ..() {
     cd ..
-    if [ ! -z "${1}" ]; then ${*}; fi
+    if [ -n "${1}" ]; then "${*}"; fi
 }
 
 # back to last place & possibly run a command
 function -() {
-    cd -
-    if [ ! -z "${1}" ]; then ${*}; fi
+    cd - || exit
+    if [ -n "${1}" ]; then "${*}"; fi
 }
 
 # go to a place, run a thing, come back
 function cdx() {
-    cd ${1}
-    ${A[@]:1}
-    cd -
+    cd "${1}" || exit
+    "${A[@]:1}"
+    cd - || exit
 }
 
 # down a level, run a thing, come back
 function .-() {
     cd ..
-    ${*}
-    cd -
+    "${*}"
+    cd - || exit
 }
 
 # less which
-function lw() { less `which $*` ; }
+function lw() { less "$(which "$*")" ; }
 
 # find a file with a pattern in name
 function ff() { find . -type f -iname '*'$*'*' -ls ; }
