@@ -72,9 +72,22 @@ fi
 alias dc='docker-compose'
 alias k=kubectl
 alias tf=terraform
+alias tg=terragrunt
 
 # python venv
 # assumes virtual env has been setup at ~/.venv
 # to do that:
 # python3 -m venv ~/.venv
 alias venv='source ~/.venv/bin/activate'
+
+# aws helpers
+function whoaws() {
+    echo "profile: $AWS_PROFILE"
+    echo " region: $AWS_REGION"
+}
+function setaws() {
+    export AWS_PROFILE=$1
+    export AWS_REGION=$2
+    echo 'aws env variables set'
+    whoaws
+}
