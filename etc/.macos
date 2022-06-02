@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # some stuff for configuring a mac
+# see https://macos-defaults.com/ for more powers
 
 # show hidden files
 defaults write com.apple.finder AppleShowAllFiles TRUE
@@ -16,8 +17,11 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # holding a key repeats the key!
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# fn keys actually do fn key things
+defaults write 'Apple Global Domain' com.apple.keyboard.fnState -bool true
+
 # don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
 # show date next to time in topbar
-defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d H.mm"
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d H.mm.ss"
