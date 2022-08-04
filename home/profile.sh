@@ -37,7 +37,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 # go
 export GOPATH="$HOME/go"
-export PATH="$GOPATH:$PATH:/usr/local/go/bin"
+export PATH="$GOPATH/bin:$PATH:/usr/local/go/bin"
 export GO111MODULE=on
 # local bin
 export PATH="$HOME/.bin:$PATH"
