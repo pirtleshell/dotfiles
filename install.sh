@@ -13,7 +13,7 @@ fi
 ${DOTDIR}/cleanup.sh
 
 
-function home_link() {
+home_link () {
   echo '  linking' $1
   ln -s ${DOTDIR}/home/$1 ~/$1
 }

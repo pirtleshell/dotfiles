@@ -3,7 +3,7 @@
 
 echo running cleanup script
 
-function remove_home_link() {
+remove_home_link () {
   local _f=$HOME/$1
   if [ -L $_f ]; then
     unlink $_f
