@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTDIR="$(cd "$(dirname "$0")" && pwd)"
 
 # symlink entire dotfiles dir
 if [ ! -e ~/.dotfiles ]; then
