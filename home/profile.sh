@@ -77,7 +77,7 @@ function docker-clean {
 
 ### asdf Tool Version Manager ###
 # http://asdf-vm.com/guide/getting-started.html
-source_if_exists /usr/local/opt/asdf/libexec/asdf.sh
+source_if_exists ~/.asdf/asdf.sh
 
 ### Nodenv setup ###
 if hash nodenv 2>/dev/null; then

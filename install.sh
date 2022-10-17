@@ -38,6 +38,9 @@ esac
 # git
 home_link .gitconfig
 
+# asdf tool-versions
+home_link .tool-versions
+
 # vscode settings
 if [ -d ~/Library/Application\ Support/Code/User/ ]; then
   echo '  linking vscode settings.json'
