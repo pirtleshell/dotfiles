@@ -33,6 +33,11 @@ case "$SHELL" in
     echo bash in use, linking relevant files
     home_link .bash_profile
     home_link .bash_prompt
+    # ensure bash_profile gets called from default .bashrc
+    if grep -q .bash_profile "~/.bashrc"; then
+      echo adding .bash_profile to .bashrc
+      echo '. .bash_profile' > ~/.bashrc
+    fi
 esac
 
 # git
