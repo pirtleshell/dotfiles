@@ -79,6 +79,11 @@ function docker-clean {
 # http://asdf-vm.com/guide/getting-started.html
 source_if_exists ~/.asdf/asdf.sh
 
+## brew setup ##
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 ### Nodenv setup ###
 if hash nodenv 2>/dev/null; then
     eval "$(nodenv init -)"
