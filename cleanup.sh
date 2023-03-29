@@ -25,20 +25,4 @@ FILES='
 '
 for FILE in $FILES; do remove_home_link $FILE; done
 
-
-# vscode settings
-CODE_DIR=~/Library/Application\ Support/Code/User/
-if [ -d "$CODE_DIR" ]; then
-
-  if [ -L "$CODE_DIR"/settings.json ]; then
-    echo '  unlinked vscode settings.json'
-    unlink "$CODE_DIR"/settings.json
-  elif [ -f "$CODE_DIR"/settings.json ]; then
-    echo '  vscode settings is unlinked file! not overriding.'
-  fi
-
-else
-  echo '  vscode not found. settings not unlinked.'
-fi
-
 echo cleanup completed

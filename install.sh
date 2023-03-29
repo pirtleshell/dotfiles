@@ -45,9 +45,3 @@ home_link .gitconfig
 
 # asdf tool-versions
 home_link .tool-versions
-
-# vscode settings
-if [ -d ~/Library/Application\ Support/Code/User/ ]; then
-  echo '  linking vscode settings.json'
-  ln -s $DOTDIR/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-fi
