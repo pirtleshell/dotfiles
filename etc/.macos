@@ -25,3 +25,4 @@ defaults write com.apple.dock show-recents -bool false
 
 # show date next to time in topbar
 defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d H.mm.ss"
+defaults write com.apple.menuextra.clock "ShowSeconds" 1
