@@ -70,10 +70,14 @@ if hash gpg 2>/dev/null; then
 fi
 
 # Clean up all your crufty containers
-function docker-clean {
-    yes | docker system prune
-    yes | docker system prune --volumes
+docker_clean() {
+    docker system prune -af
+    docker system prune -af --volumes
 }
+docker_clean_images() {
+    docker image prune -af
+}
+
 
 ### asdf Tool Version Manager ###
 # http://asdf-vm.com/guide/getting-started.html
