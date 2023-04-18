@@ -42,6 +42,7 @@ esac
 
 # git
 home_link .gitconfig
+home_link .config/git
 
 # asdf tool-versions
 home_link .tool-versions

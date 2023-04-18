@@ -6,6 +6,7 @@
 	preloadindex = true
 	# safe rebasing on macOS
 	trustctime = false
+	excludesfile = ~/.config/git/ignore
 [pull]
 	rebase = true
 [alias]

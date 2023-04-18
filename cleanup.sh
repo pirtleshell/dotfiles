@@ -19,6 +19,7 @@ FILES='
 .bash_profile
 .bash_prompt
 .gitconfig
+.config/git
 .tool-versions
 .zshrc
 .zsh_prompt
