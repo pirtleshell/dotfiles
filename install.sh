@@ -26,6 +26,11 @@ case "$SHELL" in
     home_link .zshrc
     home_link .zsh_prompt
     ;;
+  *fish)
+    echo fish in use, linking relevant files
+    home_link .config/fish
+    home_link .config/starship.toml
+    ;;
   *bash)
     echo bash in use, linking relevant files
     home_link .aliases
@@ -42,8 +47,6 @@ esac
 # git
 home_link .gitconfig
 home_link .config/git
-
-home_link .config/starship.toml
 
 # asdf tool-versions
 home_link .tool-versions
