@@ -1,13 +1,9 @@
 if status is-interactive
   starship init fish | source
 
-  # set jump command to j
-  # see z port here: https://github.com/jethrokuan/z
-  set -gx Z_CMD j
-
   function source_if_exists --description 'Source a file if it exists'
     if test -s $argv
-      . $argv
+      fish $argv
     end
   end
 
