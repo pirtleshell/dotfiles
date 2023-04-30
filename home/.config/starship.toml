@@ -1,0 +1,56 @@
+# https://starship.rs/config
+add_newline = true
+command_timeout = 10000
+format = """
+$time\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character"""
+
+[aws]
+disabled = true
+
+[cmd_duration]
+min_time = 15
+show_milliseconds = false
+disabled = false
+format = "🕙 $duration($style)"
+
+[directory]
+truncate_to_repo = false
+style = "bold 64"
+
+[golang]
+symbol = " "
+
+[git_branch]
+symbol = " "
+style = "bold 63"
+
+[git_status]
+style = "bold 33"
+
+[hostname]
+ssh_only = false
+style = "bold 136"
+
+[nodejs]
+symbol = " "
+
+[time]
+disabled = false
+format = "[$time|]($style) "
+style = "63"
+time_format = "%H:%M"
+
+[username]
+format = "[$user]($style) at "
+show_always = true
+style_user = "bold 166"

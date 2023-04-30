@@ -20,6 +20,7 @@ FILES='
 .bash_prompt
 .gitconfig
 .config/git
+.config/starship.toml
 .tool-versions
 .zshrc
 .zsh_prompt

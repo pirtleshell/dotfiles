@@ -18,19 +18,18 @@ home_link () {
   ln -s ${DOTDIR}/home/$1 ~/$1
 }
 
-# universal aliases setup
-home_link .aliases
-
 case "$SHELL" in
   *zsh)
-    # zsh-specific files
     echo zsh in use, linking relevant files
+    home_link .aliases
+    # zsh-specific files
     home_link .zshrc
     home_link .zsh_prompt
     ;;
   *bash)
-    # bash-specific files
     echo bash in use, linking relevant files
+    home_link .aliases
+    # bash-specific files
     home_link .bash_profile
     home_link .bash_prompt
     # ensure bash_profile gets called from default .bashrc
@@ -43,6 +42,8 @@ esac
 # git
 home_link .gitconfig
 home_link .config/git
+
+home_link .config/starship.toml
 
 # asdf tool-versions
 home_link .tool-versions
