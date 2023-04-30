@@ -11,6 +11,9 @@ $git_state\
 $git_status\
 $cmd_duration\
 $line_break\
+$rust\
+$nodejs\
+$golang\
 $python\
 $character"""
 
