@@ -22,6 +22,9 @@ if status is-interactive
       eval "$(/opt/homebrew/bin/brew shellenv)"
   end
 
+  ### go-installed bins ###
+  fish_add_path $HOME/go/bin
+
   ####
   # Support local machine overrides for anything!
   ####
