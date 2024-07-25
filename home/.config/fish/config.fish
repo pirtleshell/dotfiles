@@ -1,5 +1,5 @@
 if status is-interactive
-  starship init fish | source
+  /opt/homebrew/bin/starship init fish | source
 
   function source_if_exists --description 'Source a file if it exists'
     if test -s $argv
